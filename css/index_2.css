@@ -489,6 +489,31 @@ a {
   .content-top {
     padding: 3rem 2rem 5rem 3rem;
   }
+  .content-top_box-border {
+    padding: 1rem 1.25rem;
+  }
+  .content-top_title {
+    font-size: 2.5rem;
+  }
+  .content-top_subtitle {
+    font-size: 1.25rem;
+  }
+  .content-top_txt, .content-top_link {
+    font-size: 1rem;
+  }
+  .content-top_background::before, .content-top_background::after {
+    width: 22.5rem;
+    height: 22.5rem;
+  }
+  .content-top_background::before {
+    top: -5rem;
+  }
+  .content-top_background::after {
+    bottom: -14rem;
+  }
+  .content_hero-img {
+    width: 57.5vw;
+  }
 }
 @media screen and (max-width: 1440px) {
   .content-top {
