@@ -17,17 +17,56 @@
     <body>
         <div class="wrapper">
             <header class="header | w-100">
-                <div class="header-container | d-flex align-items-center justify-content-between">
+                <div class="header_container | d-flex align-items-center justify-content-between">
                     <div class="header-logo">
-                        <a class="header-logo-link" href="index.html"><img class="header-logo-img" src="img/logo.png" alt="Logo"></a>
+                        <a class="header-logo_link" href="index.html"><img class="header-logo_img" src="img/logo.png" alt="Logo"></a>
                     </div>
                     <div class="header-hamburger-area">
-                        <div class="header-hamburger-button">
-                            <div class="header-hamburger"></div>
+                        <div class="header-hamburger_button | d-flex align-items-center">
+                            <div class="header-hamburger | d-flex justify-content-center"></div>
                         </div>
                     </div>
                 </div>
+
+                <div class="sidenav">
+                    <div class="sidenav-overlay | h-100">
+                        <div class="sidenav-logo | d-flex align-items-center">
+                            <img class="sidenav-logo-img" src="img/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="sidenav-content-container">
+                        <div class="sidenav-content">
+                            <ul class="sidenav-list-items">
+                                <li class="sidenav-list-item">
+                                    <a class="sidenav-list-link | d-flex align-items-center w-100" href="about-me.html">About Me</a></li>
+                                <li class="sidenav-list-item">
+                                    <a class="sidenav-list-link | d-flex align-items-center w-100" href="projects.html">Portfolio</a></li>
+                                <li class="sidenav-list-item">
+                                    <a class="sidenav-list-link | d-flex align-items-center w-100" href="contact.htmls">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidenav-footer | d-flex">
+                            <div class="sidenav-footer-conainer | d-flex align-items-center">
+                                <div class="sidenav-footer-text-container">
+                                    <span class="sidenav-footer-text">Socials:</span>
+                                </div>
+                                <ul class="sidenav-footer-icons | d-flex">
+                                    <li class="sidenav-footer-item">
+                                        <a class="sidenav-footer-link" href="https://github.com/wvdelden99" target="_blank">
+                                            <img class="sidenav-footer-icon-img" src="img/icon/icon_github_001_FFFFFF.svg" alt="GitHub"></a></li>
+                                    <li class="sidenav-footer-item">
+                                        <a class="sidenav-footer-link" href="https://github.com/WvDeldenHR" target="_blank">
+                                            <img class="sidenav-footer-icon-img" src="img/icon/icon_githubhr_001_FFFFFF.svg" alt="School GitHub"></a></li>
+                                    <li class="sidenav-footer-item">
+                                        <a class="sidenav-footer-link" href="https://www.linkedin.com/in/wesley-van-delden-32453a1a0/" target="_blank">
+                                            <img class="sidenav-footer-icon-img" src="img/icon/icon_linkedin_001_FFFFFF.svg" alt="LinkedIn"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </header>
+
 
             <section class="h-fixed">
                 <div class="content-top | d-flex justify-content-between">
@@ -175,6 +214,8 @@
                     <div></div>
                 </div>
             </footer>
+
+            <script src="src/app.js"></script>
         </div>
     </body>
 </html>

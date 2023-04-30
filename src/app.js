@@ -1,5 +1,5 @@
 // Nav Hamburger
-const menuBtn = document.querySelector(".nav-hamburger-button");
+const menuBtn = document.querySelector(".header-hamburger_button");
 const sideNav = document.querySelector(".sidenav");
 const sideNavContent = document.querySelector(".sidenav-content-container");
 
