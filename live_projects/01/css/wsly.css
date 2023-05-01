@@ -1,0 +1,568 @@
+html, body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Roboto Mono';
+}
+
+/*----------Navbar----------*/
+.navbar {
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.navbar-content {
+    text-align: right;
+}
+
+.navbar-left {
+    float: left;
+}
+
+.navbar-left-logo img {
+    width: 150px;
+}
+
+.navbar-right-bars {
+    display: none;
+    float: right;
+}
+
+.navbar-right-bar {
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.nrbt {
+    width: 30px;
+}
+
+.nrbc {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 25px;
+}
+
+.nrbb {
+    margin-left: 10px;
+    width: 20px;
+}
+
+.navbar-right-content {
+    margin: 5px 0;
+    padding: 0 5px;
+}
+
+.navbar-right-content a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.9;
+    -webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.navbar-right-content a:hover {
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding-top: 25px;
+		padding-left: 25px;
+		padding-right: 25px;
+    }
+    .navbar-left-logo img {
+        width: 100px;
+    }
+    .navbar-right-bars {
+        display: block;
+    }
+    .navbar-right-content {
+        display: none;
+    }
+}
+
+/*----------Sidenav----------*/
+.sidenav {
+    position: fixed;
+    padding-top: 60px;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    display: block;
+    padding: 8px 8px 8px 32px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    margin-left: 50px;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidenav-bars {
+        margin-top: -5px;
+        margin-left: 5px;
+        display: block;
+    }
+}
+
+/*----------Home----------*/
+.hm-content {
+    margin: 150px auto 0 auto;
+    width: 90%;
+}
+
+.hm-content-txt {
+    float: left;
+    padding-left: 10%;
+    overflow-x: hidden;
+}
+
+.hm-content-subtitle {
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.hm-content-img img {
+    float: right;
+    padding-right: 10%;
+    width: 300px;
+}
+
+.hm-content-btm-line {
+    position: absolute;
+    margin: 0 50% 0 50%;
+    width: 2px;
+    height: 50px;
+    bottom: 10px;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+    .hm-content {
+        margin: 100px auto 0 auto;
+    }
+    .hm-content-img img {
+        display: none;
+    }
+}
+
+/*----------Wie ben ik?----------*/
+.wbi-content {
+    margin: 150px auto 0 auto;
+    width: 90%;
+}
+
+.wbi-content-left {
+    float: left;
+    padding-left: 10%;
+}
+
+.wbi-content-right {
+    float: right;
+    padding-right: 10%;
+}
+
+.wbi-content-img img {
+    width: 250px;
+}
+
+.wbi-right-content {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+@media screen and (max-width:600px) {
+	.wbi-content {
+		margin: 100px auto 0 auto;
+    }
+    .wbi-content-right {
+        padding: 20px;
+    }
+}
+
+/*----------Wat ik doe----------*/
+.wid-content {
+	margin: 100px auto 150px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.wid-content-box {
+    display: flex;
+    padding: 20px 0;
+}
+
+.wid-content-title {
+    padding-left: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.wid-content-txt {
+    padding: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.wid-content-img img {
+    width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    .wid-content {
+        margin: 75px auto 0 auto;
+    }
+    .wid-content-box {
+        padding: 10px 0;
+    }
+    .wid-content-title {
+        padding-left: 8px;
+        font-size: 14px;
+    }
+    .wid-content-txt {
+        padding: 10px 8px 0 8px;
+        font-size: 10px;
+    }
+    .wid-content-img img {
+        margin-top: 15%;
+        width: 100%;
+    }
+}
+
+/*----------Contact----------*/
+.contact-content {
+    margin: 250px auto 0 auto;
+    width: 90%;
+    max-width: 300px;
+}
+
+.contact-content-email {
+    margin: 0 auto 0 auto;
+    width: 90%;
+    max-width: 300px;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.contact-content-social {
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+    width: 90%;
+    max-width: 200px;
+}
+
+.contact-content-social img {
+    padding: 0 2px;
+}
+
+/*----------Bottom Line----------*/
+.btm-line {
+    margin: 0 50% 0 50%;
+    width: 2px;
+    height: 50px;
+    bottom: 10px;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+.wrapper-btm {
+    margin-bottom: 10px;
+}
+
+/*----------Clear----------*/
+.clear {
+    clear: both;
+}
+
+/*----------Glitch Text----------*/
+.glitch {
+	position: relative;
+	color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0;
+	animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+
+.glitch::before {
+	content: attr(data-text);
+    position: absolute;
+    width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	left: 2px;
+	text-shadow: -2px 0 #ff00c1;
+	clip: rect(44px, 450px, 56px, 0);
+	animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+	content: attr(data-text);
+    position: absolute;
+    width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	left: -2px;
+	text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+	animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+	0% {
+		clip: rect(6px, 9999px, 96px, 0);
+		transform: skew(0.58deg);
+	}
+	5% {
+		clip: rect(36px, 9999px, 43px, 0);
+		transform: skew(0.7deg);
+	}
+	10% {
+		clip: rect(92px, 9999px, 78px, 0);
+		transform: skew(0.71deg);
+	}
+	15% {
+		clip: rect(10px, 9999px, 23px, 0);
+		transform: skew(0.67deg);
+	}
+	20% {
+		clip: rect(40px, 9999px, 2px, 0);
+		transform: skew(0.51deg);
+	}
+	25% {
+		clip: rect(20px, 9999px, 48px, 0);
+		transform: skew(0.41deg);
+	}
+	30% {
+		clip: rect(75px, 9999px, 48px, 0);
+		transform: skew(0.76deg);
+	}
+	 35% {
+		clip: rect(51px, 9999px, 60px, 0);
+		transform: skew(0.46deg);
+	}
+	40% {
+		clip: rect(45px, 9999px, 2px, 0);
+		transform: skew(0.75deg);
+	}
+	45% {
+		clip: rect(60px, 9999px, 94px, 0);
+		transform: skew(0.75deg);
+	}
+	50% {
+		clip: rect(78px, 9999px, 58px, 0);
+		transform: skew(0.37deg);
+	}
+	55% {
+		clip: rect(72px, 9999px, 33px, 0);
+		transform: skew(0.18deg);
+	}
+	60% {
+		clip: rect(44px, 9999px, 98px, 0);
+		transform: skew(0.39deg);
+	}
+	65% {
+		clip: rect(63px, 9999px, 96px, 0);
+		transform: skew(0.45deg);
+	}
+	70% {
+		clip: rect(48px, 9999px, 26px, 0);
+		transform: skew(0.89deg);
+	}
+	75% {
+		clip: rect(92px, 9999px, 44px, 0);
+		transform: skew(0.27deg);
+	}
+	80% {
+		clip: rect(75px, 9999px, 71px, 0);
+		transform: skew(0.89deg);
+	}
+	85% {
+		clip: rect(97px, 9999px, 99px, 0);
+		transform: skew(0.8deg);
+	}
+	90% {
+		clip: rect(19px, 9999px, 72px, 0);
+		transform: skew(0.76deg);
+	}
+	95% {
+		clip: rect(21px, 9999px, 40px, 0);
+		transform: skew(0.89deg);
+	}
+	100% {
+		clip: rect(62px, 9999px, 27px, 0);
+		transform: skew(0.5deg);
+	}
+}
+
+@keyframes glitch-anim2 {
+	0% {
+		clip: rect(41px, 9999px, 23px, 0);
+		transform: skew(0.29deg);
+	}
+	5% {
+		clip: rect(20px, 9999px, 16px, 0);
+		transform: skew(0.88deg);
+	}
+	10% {
+		clip: rect(39px, 9999px, 1px, 0);
+		transform: skew(0.29deg);
+	}
+	15% {
+		clip: rect(42px, 9999px, 45px, 0);
+		transform: skew(0.01deg);
+	}
+	20% {
+		clip: rect(34px, 9999px, 51px, 0);
+		transform: skew(0.59deg);
+	}
+	25% {
+		clip: rect(76px, 9999px, 70px, 0);
+		transform: skew(0.08deg);
+	}
+	30% {
+		clip: rect(85px, 9999px, 21px, 0);
+		transform: skew(0.79deg);
+	}
+	35% {
+		clip: rect(42px, 9999px, 22px, 0);
+		transform: skew(0.33deg);
+	}
+	40% {
+	    clip: rect(41px, 9999px, 66px, 0);
+		transform: skew(0.49deg);
+	}
+	45% {
+		clip: rect(40px, 9999px, 67px, 0);
+		transform: skew(0.46deg);
+	}
+	50% {
+		clip: rect(63px, 9999px, 28px, 0);
+		transform: skew(0.86deg);
+	}
+	55% {
+		clip: rect(91px, 9999px, 29px, 0);
+		transform: skew(0.43deg);
+	}
+	60% {
+		clip: rect(4px, 9999px, 92px, 0);
+		transform: skew(0.1deg);
+	}
+	65% {
+		clip: rect(42px, 9999px, 40px, 0);
+		transform: skew(0.55deg);
+	}
+	70% {
+		clip: rect(53px, 9999px, 18px, 0);
+		transform: skew(0.79deg);
+	}
+	75% {
+		clip: rect(90px, 9999px, 68px, 0);
+		transform: skew(0.01deg);
+	}
+	80% {
+		clip: rect(40px, 9999px, 17px, 0);
+		transform: skew(0.67deg);
+	}
+	85% {
+		clip: rect(59px, 9999px, 42px, 0);
+		transform: skew(0.01deg);
+	}
+	90% {
+		clip: rect(23px, 9999px, 64px, 0);
+		transform: skew(0.51deg);
+	}
+	95% {
+		clip: rect(65px, 9999px, 58px, 0);
+		transform: skew(0.11deg);
+	}
+	100% {
+		clip: rect(41px, 9999px, 66px, 0);
+		transform: skew(0.6deg);
+	}
+}
+
+@keyframes glitch-skew {
+	0% {
+		transform: skew(1deg);
+	}
+	10% {
+		transform: skew(2deg);
+	}
+	20% {
+		transform: skew(1deg);
+	}
+	30% {
+		transform: skew(4deg);
+	}
+	40% {
+		transform: skew(-1deg);
+	}
+	50% {
+		transform: skew(-3deg);
+	}
+	60% {
+		transform: skew(-2deg);
+	}
+	70% {
+		transform: skew(-1deg);
+	}
+	80% {
+		transform: skew(1deg);
+	}
+	90% {
+		transform: skew(-4deg);
+	}
+	100% {
+		transform: skew(3deg);
+	}
+}

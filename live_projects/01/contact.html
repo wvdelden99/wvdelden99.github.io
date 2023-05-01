@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WSLY - Contact</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+        <link rel="icon" href="img/wsly-icon.png">
+        <link rel="stylesheet" href="css/wsly.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="navbar-content">
+                    <div class="navbar-left">
+                        <span class="nabvar-left-content navbar-left-logo"><a href="wpb.html"><img src="img/wsly.png"></a></span>
+                    </div>
+                    <div id="Sidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="CloseSideNav()">&times;</a>
+                        <a href="wbi.html">Wie ben ik?</a>
+                        <a href="wid.html">Wat ik doe</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="navbar-right-bars" onclick="OpenSideNav()">
+                        <div class="navbar-right-bar nrbt"></div>
+                        <div class="navbar-right-bar nrbc"></div>
+                        <div class="navbar-right-bar nrbb"></div>
+                    </div>
+                    <div class="navbar-right">
+                        <span class="navbar-right-content"><a href="wbi.html">Wie ben ik?</a></span>
+                        <span class="navbar-right-content"><a href="wid.html">Wat ik doe</a></span>
+                        <span class="navbar-right-content"><a class="glitch" data-text="Contact" href="contact.html">Contact</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-content-email">Email - 0960572@hr.nl</div>
+                <div class="contact-content-social">
+                    <a href="https://www.linkedin.com/in/wesley-van-delden-32453a1a0"><img src="img/linkedin.png"></a>
+                    <a href="https://github.com/WvDeldenHR"><img src="img/github.png"></a>
+                    <a href="https://www.instagram.com/wesleyvd__/?hl=nl"><img src="img/instagram.png"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    function OpenSideNav() {
+        document.getElementById("Sidenav").style.width = "250px";
+    }
+
+    function CloseSideNav() {
+        document.getElementById("Sidenav").style.width = "0";
+    }
+</script>

@@ -13,8 +13,12 @@
   --color-font-light: var(--color-neutral-000);
   --color-font-dark: var(--color-neutral-900);
 
-  --font-family: 'Exo', sans-serif;;
+  --font-family: 'Exo', sans-serif;
   --font-family-01: 'Quicksand', sans-serif;
+  --font-family-02: 'Truculenta', sans-serif;;
+  --font-family-03: 'Silkscreen', sans-serif;
+  --font-family-04: 'Raleway', sans-serif;
+  --font-family-05: 'Montserrat', sans-serif;
 }
 
 /* Reset */
@@ -379,7 +383,7 @@ a {
 .content-list {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem;
-  padding-inline: 2.5rem;
+  padding: 0 2.5rem;
   width: 80%;
 }
 
@@ -401,10 +405,6 @@ a {
   box-shadow: 0px 0px 10px 0px rgba(48,160,139,1);
 }
 
-.content-list_title-container {
-  padding: 5rem 7.5rem;
-}
-
 .content-list_icon {
   width: 2rem;
   height: 2rem;
@@ -423,7 +423,26 @@ a {
 .clt-01 {
   font-size: 2rem;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-family-05);
+}
+.clt-02 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  font-family: var(--font-family-04);
+}
+.clt-03 {
+  font-size: 2rem;
+  font-family: var(--font-family-03);
+}
+.clt-04 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  font-family: var(--font-family-01);
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+}
+.cli {
+  width: 10rem;
 }
 
 .content-list_txt {
@@ -444,6 +463,42 @@ a {
   transform: rotate(270deg);
   transform-origin: bottom right;
 }
+
+@media screen and (max-width: 1440px) {
+  .content-list_container {
+    align-items: unset;
+  }
+  .content-list {
+    padding: 7.5rem 2rem;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .content-list {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .content-list_container {
+    display: block;
+  }
+  .content-list {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 10rem 1.25rem;
+    width: 100%;
+  }
+  .content-list_number {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .clt-01, .clt-02, .clt-03, .clt-04 {
+    font-size: 1rem;
+  }
+}
+
 
 /* Content */
 .content-top {

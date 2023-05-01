@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WSLY</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+        <link rel="icon" href="img/wsly-icon.png">
+        <link rel="stylesheet" href="css/wsly.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="navbar-content">
+                    <div class="navbar-left">
+                        <span class="nabvar-left-content navbar-left-logo"><a href="wpb.html"><img src="img/wsly.png"></a></span>
+                    </div>
+                    <div id="Sidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="CloseSideNav()">&times;</a>
+                        <a href="wbi.html">Wie ben ik?</a>
+                        <a href="wid.html">Wat ik doe</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="navbar-right-bars" onclick="OpenSideNav()">
+                        <div class="navbar-right-bar nrbt"></div>
+                        <div class="navbar-right-bar nrbc"></div>
+                        <div class="navbar-right-bar nrbb"></div>
+                    </div>
+                    <div class="navbar-right">
+                        <span class="navbar-right-content"><a href="wbi.html">Wie ben ik?</a></span>
+                        <span class="navbar-right-content"><a href="wid.html">Wat ik doe</a></span>
+                        <span class="navbar-right-content"><a href="contact.html">Contact</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hm-content">
+                <div class="hm-content-txt">
+                    <div class="glitch" data-text="Web Developer">Web Developer</div>
+                    <div class="glitch" data-text="Designer and">Designer and</div>
+                    <div class="glitch" data-text="Producer">Producer</div>
+                    <div class="hm-content-subtitle">Wesley van Delden</div>
+                </div>
+                <div class="hm-content-img"><img src="img/glitchcube-alt.png"></div>
+            </div>
+            <div class="hm-content-btm-line"></div>
+        </div>
+    </body>
+</html>
+<script>
+    function OpenSideNav() {
+        document.getElementById("Sidenav").style.width = "250px";
+    }
+
+    function CloseSideNav() {
+        document.getElementById("Sidenav").style.width = "0";
+    }
+</script>
