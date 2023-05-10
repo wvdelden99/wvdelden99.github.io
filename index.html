@@ -14,19 +14,64 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
         <!-- CSS -->
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         <div class="wrapper">
-            <div class="app-container">
-                <header class="header | w-100">
-                    <div class="header-container | d-flex align-items-center mr-6">
-                        <a class="header-logo" href="index.html"><img class="header-logo-img" src="img/logo.png" alt="logo"></a>
+            <header class="header | w-100">
+                <div class="header_container | d-flex align-items-center justify-content-between">
+                    <div class="header-logo">
+                        <a class="header-logo_link" href="index.html"><img class="header-logo_img" src="img/logo.png" alt="Logo"></a>
                     </div>
-                    <div class="header-border"></div>
-                </header>
+                    <div class="header-hamburger-area">
+                        <div class="header-hamburger_button | d-flex align-items-center">
+                            <div class="header-hamburger | d-flex justify-content-center"></div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="sidenav">
+                    <div class="sidenav-overlay | h-100">
+                        <div class="sidenav-logo | d-flex align-items-center">
+                            <img class="sidenav-logo-img" src="img/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="sidenav-content-container">
+                        <div class="sidenav-content">
+                            <ul class="sidenav-list-items">
+                                <li class="sidenav-list-item">
+                                    <a class="sidenav-list-link | d-flex align-items-center w-100" href="about-me.html">About Me</a></li>
+                                <li class="sidenav-list-item">
+                                    <a class="sidenav-list-link | d-flex align-items-center w-100" href="projects.html">Portfolio</a></li>
+                                <li class="sidenav-list-item">
+                                    <a class="sidenav-list-link | d-flex align-items-center w-100" href="contact.htmls">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidenav-footer | d-flex">
+                            <div class="sidenav-footer-conainer | d-flex align-items-center">
+                                <div class="sidenav-footer-text-container">
+                                    <span class="sidenav-footer-text">Socials:</span>
+                                </div>
+                                <ul class="sidenav-footer-icons | d-flex">
+                                    <li class="sidenav-footer-item">
+                                        <a class="sidenav-footer-link" href="https://github.com/wvdelden99" target="_blank">
+                                            <img class="sidenav-footer-icon-img" src="img/icon/icon_github_001_FFFFFF.svg" alt="GitHub"></a></li>
+                                    <li class="sidenav-footer-item">
+                                        <a class="sidenav-footer-link" href="https://github.com/WvDeldenHR" target="_blank">
+                                            <img class="sidenav-footer-icon-img" src="img/icon/icon_githubhr_001_FFFFFF.svg" alt="School GitHub"></a></li>
+                                    <li class="sidenav-footer-item">
+                                        <a class="sidenav-footer-link" href="https://www.linkedin.com/in/wesley-van-delden-32453a1a0/" target="_blank">
+                                            <img class="sidenav-footer-icon-img" src="img/icon/icon_linkedin_001_FFFFFF.svg" alt="LinkedIn"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </header>
+
+
+            <section>
                 <div class="index-container index-bg | d-grid">
                     <div class="index-left"></div>
                     <div class="index-center index-main-center | d-grid">
@@ -59,44 +104,6 @@
                         <div class="nav-hamburger-area | d-flex align-items-center justify-content-center w-100">
                             <div class="nav-hamburger-button | d-flex align-items-center justify-content-center">
                                 <div class="nav-hamburger | d-flex justify-content-end"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sidenav">
-                        <div class="sidenav-overlay | h-100">
-                            <div class="sidenav-logo | d-flex align-items-center">
-                                <img class="sidenav-logo-img" src="img/logo.png" alt="logo">
-                            </div>
-                        </div>
-                        <div class="sidenav-content-container">
-                            <div class="sidenav-content">
-                                <ul class="sidenav-list-items">
-                                    <li class="sidenav-list-item">
-                                        <a class="sidenav-list-link | d-flex align-items-center w-100" href="about-me.html">About Me</a></li>
-                                    <li class="sidenav-list-item">
-                                        <a class="sidenav-list-link | d-flex align-items-center w-100" href="projects.html">Portfolio</a></li>
-                                    <li class="sidenav-list-item">
-                                        <a class="sidenav-list-link | d-flex align-items-center w-100" href="">Contact</a></li>
-                                </ul>
-                            </div>
-                            <div class="sidenav-footer | d-flex">
-                                <div class="sidenav-footer-conainer | d-flex align-items-center">
-                                    <div class="sidenav-footer-text-container">
-                                        <span class="sidenav-footer-text">Socials:</span>
-                                    </div>
-                                    <ul class="sidenav-footer-icons | d-flex">
-                                        <li class="sidenav-footer-item">
-                                            <a class="sidenav-footer-link" href="">
-                                                <img class="sidenav-footer-icon-img" src="img/icon/icon_github_001_FFFFFF.svg" alt="GitHub"></a></li>
-                                        <li class="sidenav-footer-item">
-                                            <a class="sidenav-footer-link" href="">
-                                                <img class="sidenav-footer-icon-img" src="img/icon/icon_githubhr_001_FFFFFF.svg" alt="School GitHub"></a></li>
-                                        <li class="sidenav-footer-item">
-                                            <a class="sidenav-footer-link" href="">
-                                                <img class="sidenav-footer-icon-img" src="img/icon/icon_linkedin_001_FFFFFF.svg" alt="LinkedIn"></a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -157,13 +164,31 @@
                     </div>
                     <div class="index-right"></div>
                 </div>
+            </section>
 
-                <div clas="footer">
-
+            <footer class="footer">
+                <div class="footer-container | d-grid align-items-center h-100">
+                    <div class="d-flex justify-content-center">
+                        <img class="footer-logo_img" src="img/logo_dark.png" alt="">
+                    </div>
+                    <div></div>
+                    <div class="footer-icons_container | d-flex">
+                        <ul class="footer-icons | d-flex">
+                            <li class="footer_item">
+                                <a class="footer_link" href="https://github.com/wvdelden99" target="_blank">
+                                    <img class="footer-icon_img" src="img/icon/icon_github_001_212427.svg" alt="GitHub"></a></li>
+                            <li class="footer_item">
+                                <a class="footer_link" href="https://github.com/WvDeldenHR" target="_blank">
+                                    <img class="footer-icon_img" src="img/icon/icon_githubhr_001_212427.svg" alt="School GitHub"></a></li>
+                            <li class="footer_item">
+                                <a class="footer_link" href="https://www.linkedin.com/in/wesley-van-delden-32453a1a0/" target="_blank">
+                                    <img class="footer-icon_img" src="img/icon/icon_linkedin_001_212427.svg" alt="LinkedIn"></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </footer>
+            
+            <script src="src/app.js"></script>
         </div>
-
-        <script src="src/app.js"></script>
     </body>
 </html>
