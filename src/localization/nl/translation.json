@@ -1,0 +1,37 @@
+{
+    "aria": {
+        "header": {
+            "header-link": "Ga naar hoofdpagina"
+        },
+        "nav": {
+            "nav-toggle": "Navigatie wissel",
+            "nav-lang-en": "Taal wissel naar Engels",
+            "nav-lang-nl": "Taal wissel naar Nederlands"
+        },
+        "button": {
+            "button-projects": "Knop naar alle projecten"
+        }
+    },
+    "button": {
+        "button-projects": "Bekijk mijn werk"
+    },
+    "heading": {
+        "home": {
+            "heading-recent-projects": "Meest Recente Projecten"
+        },
+        "project": {
+            "heading-recomb": "ReComb"
+        }
+    },
+    "tag": {
+        "tag-plugin": "Plugin"
+    },
+    "text": {
+        "home": {
+            "text-intro": "Hi, my naam is Wesley, en ik ben een creative designer en developer."
+        },
+        "project": {
+            "text-recomb": ""
+        }
+    }
+}
