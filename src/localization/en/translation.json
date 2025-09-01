@@ -17,7 +17,8 @@
     },
     "button": {
         "archive": "See all work",
-        "contact": "Contact"
+        "contact": "Contact",
+        "go-to-website": "Go to website"
     },
     "footer": {
         "heading": "Get in Touch"  

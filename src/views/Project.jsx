@@ -4,6 +4,8 @@ import { projects } from "../data/dataProjects";
 import { useTranslation } from "react-i18next";
 // Components
 import Layout from "../components/layout/Layout";
+// Images
+import IconArrowRight from "../assets/static/icon/icon_arrow_right.svg?react";
 
 
 export default function ProjectDetail() {
@@ -18,36 +20,48 @@ export default function ProjectDetail() {
 
     return (
         <Layout>
-            <section className="mt-36 min-h-screen">
-                <div className="mb-6 px-14">
-                    <Logo className="w-3xs h-auto fill-fill-light" />
+            <section className="mt-40 min-h-screen">
+                <div className="flex max-lg:justify-center mb-8 px-14">
+                    {project.image_logo && (
+                        <Logo className="w-3xs md:w-xs h-auto fill-fill-light" />
+                    )}
                 </div>
 
-                <div className="flex items-flex-start space-between">
-                    <div className="flex flex-col items-flex-start space-between w-1/2">
+                <div className="flex flex-col lg:flex-row space-between">
+                    <div className="flex flex-col items-flex-start space-between lg:w-1/2">
                         <div className="relative w-full h-auto">
-                            <div className="block">
-                                <img src={project.image_tease} alt="" />
-                            </div>
+                            <img src={project.image_tease} alt={t(project.title)} />
                         </div>
 
-                        <div className="space-y-2 p-14">
-                            <h1 className="text-2xl font-medium">{t(project.title)}</h1>
+                        <div className="flex flex-col space-y-2 pt-14 pb-10 px-10 md:pt-14 md:px-14 h-full">
+                            <h1 className="text-2xl md:text-4xl font-medium">{t(project.title)}</h1>
                             <div className="mb-8">
-                                <span className="rounded-full py-1 px-3 text-sm font-medium text-font-dark bg-neutral-000">{t(project.tag)}</span>
+                                <span className="rounded-full py-1 px-3 text-xs md:text-sm font-medium text-font-dark bg-neutral-000">
+                                    {t(project.tag)}
+                                </span>
                             </div>
 
-                            <p>
+                            <p className="text-sm md:text-lg">
                                 {t(project.description)}
                             </p>
+
+                            {project.url && (
+                                <div className="mt-auto">
+                                    <a className="flex items-center justify-self-end border border-border rounded-full py-2 pl-5 pr-3 text-sm md:text-lg font-medium" 
+                                        href={project.url} target="__blank">
+                                        <span>{t("button.go-to-website")}</span>
+                                        <span><IconArrowRight className="w-5 h-auto fill-fill-light" /></span>
+                                    </a>
+                                </div>
+                            )}
                         </div>
                     </div>
 
-                    <div className="flex flex-col items-flex-start space-between w-1/2">
+                    <div className="flex flex-col items-flex-start space-between lg:w-1/2">
                         <div className="relative w-full h-auto">
-                            <div className="block">
-                                <img className="" src={project.image_long} alt="" />
-                            </div>
+                            {project.image_long && 
+                                <img className="" src={project.image_long} alt={t(project.title)} />
+                            }
                         </div>
                     </div>
                 </div>
