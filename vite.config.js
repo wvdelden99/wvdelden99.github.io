@@ -11,4 +11,5 @@ export default defineConfig({
         svgr(),
         tailwindcss(),
     ],
+    base: "wvdelden99.github.io"
 })
