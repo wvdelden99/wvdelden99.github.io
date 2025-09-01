@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+    --color-neutral-000: #FFFFFF;
+    --color-neutral-900: #080C10;
+
+    --color-font-light: var(--color-neutral-000);
+    --color-font-dark: var(--color-neutral-900);
+
+    --color-fill-light: var(--color-neutral-000);
+    --color-fill-dark: var(--color-neutral-900);
+
+    --color-border: #646669;
+    --color-bg: #080C10;
+}
+
+/* ----- General ----- */
+:root {
+    font-family: "Onest", sans-serif;
+    font-weight: 200;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--color-font-light);
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+}
+
+h3 {
+    line-height: 1;
+}
+
+p {
+    line-height: 1.2;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ----- Nav ----- */
+.nav-hamburger {
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.nav-hamburger-line {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    border-radius: 4px;
+    width: 100%;
+    height: 1px;
+    right: 0;
+    background: var(--color-border);
+    transition: all 0.3s ease;
+}
+.nav-hamburger-line + .nav-hamburger-line {
+    margin-top: 6px;
+}
+
+.nav-hamburger-line:first-child {
+    width: 26px;
+}
+.nav-hamburger.nav-open .nav-hamburger-line:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+    width: 22px;
+}
+
+.nav-hamburger-line:nth-child(2) {
+    width: 20px;
+}
+.nav-hamburger.nav-open .nav-hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-hamburger-line:last-child {
+    width: 14px;
+} 
+.nav-hamburger.nav-open .nav-hamburger-line:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+    width: 22px;
+}
+
+
+/* ----- Button ----- */
+.button {
+    border: 1px solid var(--color-neutral-000);
+}
+
+
+/* ----- Image ----- */
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ----- Background ----- */
+.bg-image {
+    background-image: url('./assets/static/background/bg-shape.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bg-gradient-radial {
+    background: radial-gradient(circle at center, rgba(38, 56, 96, 1) 0%, rgba(8, 12, 16, 0.58) 70%);
+}
+
+.bg-gradient {
+    background-image: linear-gradient(to bottom, transparent 30%, var(--color-bg) 100%);
+}
